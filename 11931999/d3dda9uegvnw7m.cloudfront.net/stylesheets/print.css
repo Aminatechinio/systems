@@ -1,0 +1,121 @@
+/* line 6, ../../../app/assets/stylesheets/print.scss */
+#global-header a#logo {
+  display: block;
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+/* line 11, ../../../app/assets/stylesheets/print.scss */
+main > header h1::after {
+  content: "";
+}
+
+/* line 14, ../../../app/assets/stylesheets/print.scss */
+#company-name {
+  display: block;
+  font-size: 24pt;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* line 20, ../../../app/assets/stylesheets/print.scss */
+.phase-banner {
+  color: #6f777b;
+}
+
+/* line 23, ../../../app/assets/stylesheets/print.scss */
+input {
+  display: block;
+}
+
+/* line 26, ../../../app/assets/stylesheets/print.scss */
+button, a#user-signin, a#user-signin-mobile, a#view-officers, a.download, ul.navigation-list, .section-tabs, .pager, #filing-history-filter, #mortgage-filter, .searchfield, ul#navigation, #global-nav a.js-header-toggle {
+  display: none;
+}
+
+/* line 29, ../../../app/assets/stylesheets/print.scss */
+a[href^="/"]:after {
+  content: " (https://beta.companieshouse.gov.uk" attr(href) ")";
+  font-size: 90%;
+}
+
+/* line 34, ../../../app/assets/stylesheets/print.scss */
+.appointments-list a, .mortgages-list a {
+  font-size: 16px;
+  text-decoration: none;
+}
+/* line 37, ../../../app/assets/stylesheets/print.scss */
+.appointments-list a[href^="/"]:after, .mortgages-list a[href^="/"]:after {
+  content: none;
+}
+/* line 39, ../../../app/assets/stylesheets/print.scss */
+.appointments-list div[class^="appointment"], .appointments-list div[class^="mortgage"], .mortgages-list div[class^="appointment"], .mortgages-list div[class^="mortgage"] {
+  border-bottom: 1px solid #bfc1c3;
+  border-top: 1px solid #bfc1c3;
+}
+/* line 43, ../../../app/assets/stylesheets/print.scss */
+.appointments-list dl, .mortgages-list dl {
+  line-height: 1;
+}
+/* line 44, ../../../app/assets/stylesheets/print.scss */
+.appointments-list dl dt, .mortgages-list dl dt {
+  display: inline-block;
+  zoom: 1;
+  /*IE fix*/
+  *display: inline;
+  /*IE fix*/
+}
+/* line 48, ../../../app/assets/stylesheets/print.scss */
+.appointments-list dl dd, .mortgages-list dl dd {
+  display: inline-block;
+  zoom: 1;
+  /*IE fix*/
+  *display: inline;
+  /*IE fix*/
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* line 56, ../../../app/assets/stylesheets/print.scss */
+.validation-summary a {
+  display: inline-block;
+  zoom: 1;
+  /*IE fix*/
+  *display: inline;
+  /*IE fix*/
+}
+
+/* line 62, ../../../app/assets/stylesheets/print.scss */
+.filing-history #company-type-and-creation-date, .filing-history #company-status, .filing-history .filters {
+  display: none;
+}
+
+/* line 66, ../../../app/assets/stylesheets/print.scss */
+article table {
+  width: 100%;
+  text-align: left;
+}
+/* line 69, ../../../app/assets/stylesheets/print.scss */
+article table td, article table td:nth-child(n+2) {
+  text-align: left;
+}
+
+/* line 75, ../../../app/assets/stylesheets/print.scss */
+table tr th {
+  text-align: left;
+  padding: 5px;
+}
+/* line 78, ../../../app/assets/stylesheets/print.scss */
+table tr th.date {
+  padding-left: 0;
+}
+/* line 82, ../../../app/assets/stylesheets/print.scss */
+table tr td {
+  text-align: left;
+  vertical-align: top;
+  padding: 5px;
+}
+/* line 86, ../../../app/assets/stylesheets/print.scss */
+table tr td.date {
+  padding-left: 0;
+}
